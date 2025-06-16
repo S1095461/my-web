@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>陳泓儒個人簡介</title>
+	<style>
+		body {
+			background-color: #6DE8E8;
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 20px;
+			color: #333;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: auto;
+			background: white;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		h1, h2 {
+			color: #1933B9;
+			margin-bottom: 10px;
+		}
+
+		.name {
+			color: #cc11ff;
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+
+		.school {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			line-height: 1.6;
+			font-size: 16px;
+		}
+
+		img.school-logo {
+			width: 24px;
+			height: 24px;
+			vertical-align: middle;
+		}
+
+		.contact-section img {
+			width: 24px;
+			height: 24px;
+			vertical-align: middle;
+			margin-left: 5px;
+		}
+
+		.contact-section {
+			margin-top: 20px;
+		}
+
+		.marquee {
+			width: 100%;
+			overflow: hidden;
+			box-sizing: border-box;
+			margin-top: 20px;
+			border-top: 2px dashed #888;
+			padding-top: 15px;
+		}
+
+		.marquee-content {
+			display: inline-block;
+			white-space: nowrap;
+			animation: scroll-left 12s linear infinite;
+		}
+
+		.marquee-content img {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			margin-right: 20px;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+		}
+
+		@keyframes scroll-left {
+			0% {
+				transform: translateX(100%);
+			}
+			100% {
+				transform: translateX(-100%);
+			}
+		}
+
+		hr {
+			border: none;
+			border-top: 2px solid #aaa;
+			margin: 30px 0;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="name">姓名：陳泓儒</div>
+		<div class="school">靜宜大學資訊管理系畢業 <img src="im/pu.jpg" alt="PU" class="school-logo"></div>
+
+		<h2>工作經歷</h2>
+		<p>曾經在餐飲業工作一年，後來因為個人職業規劃，重新學習如何寫網頁。</p>
+
+		<div class="contact-section">
+			<h2>聯絡方式</h2>
+			<p>
+				這是我的 Instagram：
+				<a href="https://www.instagram.com/h.r._0910" target="_blank">
+					<img src="im/IG.jpg" alt="IG">
+				</a>
+			</p>
+			<p>
+				這是我的 Facebook：
+				<a href="https://www.facebook.com/chen.hong.ru.536102" target="_blank">
+					<img src="im/FB.jpg" alt="FB">
+				</a>
+			</p>
+		</div>
+                <marquee scrollamount="5">點選圖示前往</marquee>    
+		<hr>
+
+		<h2>這些是我的生活日常</h2>
+		<div class="marquee">
+			<div class="marquee-content">
+				<img src="im/sleep.jpg" alt="圖片1">
+				<img src="im/GMY.jpg" alt="圖片2">
+				<img src="im/work.jpg" alt="圖片3">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
