@@ -1,0 +1,148 @@
+/* ===== 全站基本樣式 ===== */
+body {
+	background-color: #6DE8E8;                 /* 頁面整體背景為淡藍色 */
+	font-family: 'Arial', sans-serif;          /* 使用 Arial 字體，若無則退而求其次用系統預設無襯線字體 */
+	font-size: 20px;                           /* 預設文字大小為 20px */
+	margin: 10%;                                /* 頁面四周留 10% 空白（會造成內容整體內縮） */
+	padding: 20px;                              /* 內容內部再留 20px 空白 */
+	color: #333;                                /* 文字顏色為深灰色 */
+	text-align: center;                         /* 所有文字預設置中對齊 */
+}
+
+.container {
+  background-color: white;                     /* 白色背景（中間內容區塊） */
+  width: 90%;                                  /* 占可用寬度 90% */
+  max-width: 960px;                            /* 最大寬度不超過 960px */
+  margin: 0 auto;                              /* 上下 margin 為 0，左右自動置中 */
+  padding: 40px;                               /* 內距 40px */
+  border-radius: 16px;                         /* 圓角 16px */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);      /* 加入柔和陰影，提升層次感 */
+}
+
+/* ===== 介紹標題區塊 ===== */
+.intro-header {
+	background-color: rgb(226, 146, 49);        /* 橘黃色背景 */
+	width: 70%;                                 /* 寬度為容器的 70% */
+	padding: 1.5%;                              /* 內距為 1.5% */
+	border-radius: 12px;                        /* 圓角邊框 */
+	margin: 0 auto 60px auto;                   /* 上下左右自動置中，底部留 60px 空間 */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* 加強陰影讓區塊更立體 */
+}
+
+.name {
+	color: #2c7277;                             /* 名稱顏色為深青色 */
+	font-size: 36px;                            /* 字體放大 */
+	font-weight: bold;                          /* 粗體 */
+	margin-bottom: 10px;                        /* 下方留空 */
+}
+
+.school {
+	font-size: 24px;                            /* 校名大小 */
+	margin-bottom: 10px;
+}
+
+/* ===== 標題樣式（h1、h2） ===== */
+h1, h2 {
+	color: #1933B9;                             /* 藍色標題字 */
+	margin-bottom: 16px;                        /* 底部間距 */
+	font-size: 28px;                            /* 字體放大 */
+}
+
+/* ===== 段落樣式 ===== */
+p {
+	line-height: 1.8;                           /* 行距設為 1.8 倍 */
+	font-size: 20px;                            /* 段落字體大小 */
+	margin: 10px 0;                             /* 上下 margin 各 10px，左右 0 */
+}
+
+/* ===== 校徽圖片樣式 ===== */
+img.school-logo {
+	width: 40px;                                /* 圖片寬度 40px */
+	height: 40px;                               /* 高度 40px */
+	vertical-align: middle;                     /* 垂直置中對齊文字 */
+	border-radius: 50%;                         /* 圓形圖片 */
+}
+
+/* ===== 技能圖示區塊 ===== */
+.skills {
+	margin-top: 20px;                           /* 上方留白 */
+	display: flex;                              /* 使用 Flexbox 排列技能圖示 */
+	flex-wrap: wrap;                            /* 換行顯示圖示 */
+	gap: 15px;                                   /* 圖示間距 15px */
+	justify-content: center;                    /* 水平置中排列 */
+}
+
+.skills img {
+	width: 80px;                                /* 圖示大小 80px */
+	height: 80px;
+	object-fit: contain;                        /* 保持比例縮放，完整顯示圖片內容 */
+	border-radius: 10px;                        /* 圓角邊框 */
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);      /* 陰影效果 */
+	background: white;                          /* 背景白色 */
+	padding: 8px;                               /* 圖示與邊緣留距 */
+	transition: transform 0.3s ease;            /* 平滑縮放動畫 */
+}
+.skills img:hover {
+	transform: scale(1.1);                      /* 滑過時稍微放大 */
+}
+
+/* ===== 工作介紹區塊 ===== */
+.job-description {
+	max-width: 500px;                           /* 最大寬度為 500px */
+	margin: 0 auto;                             /* 水平置中 */
+	text-align: justify;                        /* 左右對齊段落文字 */
+	line-height: 1.8;                           /* 行距 */
+}
+/* ===== 休閒活動區塊 ===== */
+.Leisure-activities{							
+	
+}
+
+/* ===== 聯絡資訊區塊 ===== */
+.contact-section {
+	margin-top: 30px;                           /* 上方留 30px 空間 */
+}
+
+/* IG / FB 圖示樣式 */
+.contact-section img {
+	width: 40px;                                /* 寬度 40px */
+	height: 40px;                               /* 高度 40px */
+	vertical-align: middle;                     /* 垂直置中對齊文字 */
+	margin-left: 8px;                           /* 左邊留 8px 空白 */
+	transition: transform 0.3s;                 /* 滑過時平滑變化（動畫） */
+}
+.contact-section img:hover {
+	transform: scale(1.2);                      /* 滑鼠移入時放大 1.2 倍 */
+}
+/* ===== 中央跑馬燈區塊 ===== */
+.center-marquee-container {
+	width: 300px;                               /* 區塊寬度固定 300px */
+	margin: 40px auto 20px auto;                /* 上 40px、下 20px 間距，左右置中 */
+	overflow: hidden;                           /* 超出部分隱藏 */
+	position: relative;                         /* 相對定位 */
+	height: 40px;                               /* 區塊高度 */
+}
+
+/* 跑馬燈內容樣式 */
+.center-marquee {
+	white-space: nowrap;                        /* 不換行 */
+	display: inline-block;
+	animation: bounce-left-right 2s ease-in-out infinite alternate; /* 執行 bounce 動畫，來回效果 */
+	font-weight: bold;                          /* 粗體字 */
+	font-size: 24px;
+	color: #fff;                                /* 白字 */
+	background-color: #1933B9;                 /* 深藍底色 */
+	padding: 5px 15px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.3);       /* 陰影效果 */
+}
+
+/* ===== 動畫：左右彈跳效果 ===== */
+@keyframes bounce-left-right {
+	0% {
+		transform: translateX(0);               /* 初始位置 */
+	}
+	100% {
+		transform: translateX(60px);           /* 向右移動 100px */
+	}
+}
