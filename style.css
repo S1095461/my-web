@@ -27,6 +27,18 @@ body {
 	border-radius: 12px;                        /* 圓角邊框 */
 	margin: 0 auto 60px auto;                   /* 上下左右自動置中，底部留 60px 空間 */
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* 加強陰影讓區塊更立體 */
+	
+}
+.intro-header ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro-header ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .name {
@@ -95,7 +107,7 @@ img.school-logo {
 }
 /* ===== 休閒活動區塊 ===== */
 .Leisure-activities{							
-	
+	justify-content: center;  
 }
 
 /* ===== 聯絡資訊區塊 ===== */
